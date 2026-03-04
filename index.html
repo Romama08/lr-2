@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineTickets — Платформа бронювання квитків</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">OnlineTickets</div>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#events">Події</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="profile.html" class="profile-link">Мій профіль</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="events">
+        <div class="section-header">
+            <h2>Майбутні події</h2>
+        </div>
+
+        <div class="filters-container">
+            <div class="filter-group">
+                <label for="category-filter">Категорія:</label>
+                <select id="category-filter">
+                    <option value="all">Усі заходи</option>
+                    <option value="music">Музика / Концерти</option>
+                    <option value="humor">Гумор / Стендап</option>
+                    <option value="art">Мистецтво / Театр</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="price-filter">Ціна:</label>
+                <select id="price-filter">
+                    <option value="all">Будь-яка ціна</option>
+                    <option value="low">Економ (до 500 грн)</option>
+                    <option value="medium">Середня (500 - 1000 грн)</option>
+                    <option value="high">Преміум (від 1000 грн)</option>
+                </select>
+            </div>
+            
+            <button id="reset-filters" class="reset-btn">Очистити</button>
+        </div>
+        
+        <div class="events-grid" id="events-container">
+            <p style="text-align: center; grid-column: 1/-1;">Завантаження актуальних подій...</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Про нас</h2>
+        <article class="about-content" id="about-content">
+            <img src="https://picsum.photos/800/300?4" alt="Команда" class="about-img">
+            <div class="about-text">
+                <p>OnlineTickets — це сучасна платформа для швидкого та зручного бронювання квитків на концерти, фестивалі, вистави та інші події.</p>
+                <p>Ми співпрацюємо з провідними організаторами заходів України та гарантуємо безпечну оплату.</p>
+                
+                <h3>Наші переваги:</h3>
+                <ul class="benefits-list">
+                    <li>Швидке онлайн-бронювання</li>
+                    <li>Безпечні платежі</li>
+                    <li>Підтримка 24/7</li>
+                    <li>Електронні квитки</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-info">
+        <p>м. Львів, вул. Степана Бандери, 12</p>
+        <p>+38 (067) 123-45-67 | support@onlinetickets.ua</p>
+    </div>
+    <p class="copyright">&copy; 2026 OnlineTickets</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій профіль | OnlineTickets</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">OnlineTickets</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="profile.html" style="color: #fbbf24;">Мій профіль</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-main">
+        <h2>Особистий кабінет</h2>
+        
+        <section class="user-info-section">
+            <div class="profile-header">
+                <img src="https://picsum.photos/100/100" alt="Аватар" class="avatar">
+                <div>
+                    <h3 id="profile-name">Користувач</h3>
+                    <p id="profile-email">Мій кабінет бронювань</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="my-bookings">
+            <h3>Мої бронювання</h3>
+            <div id="bookings-history" class="booking-container">
+                <p class="empty-msg">У вас поки немає активних бронювань.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>
