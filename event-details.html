@@ -28,21 +28,34 @@
 
         <div class="details-info">
             <p>📅 <span id="det-date"></span> | 📍 <span id="det-location"></span></p>
-            <h2 id="det-price"></h2>
+            <h2 id="det-price-container">Ціна: <span id="det-price"></span></h2>
         </div>
 
-        <button id="buy-ticket-btn" class="buy-now-btn">Купити квиток</button>
+        <button id="buy-ticket-btn" class="buy-now-btn">Забронювати квиток</button>
 
-        <section id="checkout-section" class="checkout-form-container" style="display: none;">
+        <section id="checkout-section" class="checkout-form-container" style="display: none; margin-top: 30px; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
             <h3>Оформлення замовлення</h3>
+            
+            <div class="form-group" style="margin-bottom: 20px; padding: 10px; background: #f9f9f9; border-radius: 5px;">
+                <label for="ticket-quantity" style="display: block; margin-bottom: 5px; font-weight: bold;">Кількість квитків:</label>
+                <input type="number" id="ticket-quantity" value="1" min="1" max="10" style="padding: 8px; width: 60px; border: 1px solid #ccc; border-radius: 4px;">
+                <p style="margin-top: 10px; font-size: 1.1rem;">
+                    Загальна вартість: <span id="total-price-display" style="font-weight: bold; color: #838a1e;">0 грн</span>
+                </p>
+            </div>
+
             <div class="form-group">
-                <input type="text" id="user-name" placeholder="Ваше ім'я">
+                <input type="text" id="user-name" placeholder="Ваше ім'я" style="width: 100%; padding: 10px; margin-bottom: 10px;">
             </div>
             <div class="form-group">
-                <input type="email" id="user-email" placeholder="Ваш Email (обов'язково з @)">
+                <input type="email" id="user-email" placeholder="Ваш Email (обов'язково з @)" style="width: 100%; padding: 10px; margin-bottom: 10px;">
             </div>
-            <button id="confirm-booking-btn" class="confirm-btn">Підтвердити замовлення</button>
-            <p id="details-form-msg"></p>
+
+            <button id="confirm-booking-btn" class="confirm-btn" style="width: 100%; padding: 12px; background-color: #838a1e; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 1rem;">
+                Підтвердити бронювання
+            </button>
+            
+            <p id="details-form-msg" style="margin-top: 15px; text-align: center; font-weight: bold;"></p>
         </section>
     </main>
 
