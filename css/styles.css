@@ -18,7 +18,7 @@ h2 {
     font-size: 2rem;
 }
 
-/* ===== 2. HEADER ТА НАВІГАЦІЯ ===== */
+/* ===== HEADER ТА НАВІГАЦІЯ ===== */
 header {
     background-color: #838a1e;
     color: white;
@@ -57,7 +57,7 @@ header {
     color: #fbbf24;
 }
 
-/* ===== 3. СТРІЧКА ФІЛЬТРІВ (Твій новий дизайн) ===== */
+/* ===== СТРІЧКА ФІЛЬТРІВ ===== */
 .filters-container {
     display: flex;
     align-items: center;
@@ -134,7 +134,7 @@ header {
     outline: none;
 }
 
-/* ===== 4. СІТКА ПОДІЙ ТА КАРТКИ ===== */
+/* ===== СІТКА ПОДІЙ ТА КАРТКИ ===== */
 main {
     padding: 20px 5%;
     max-width: 1200px;
@@ -190,7 +190,7 @@ section {
 .price-premium { color: #e63946 !important; }
 .price-normal { color: #838a1e; }
 
-/* ===== 5. СТОРІНКА ДЕТАЛЕЙ ТА КУПІВЛЯ (image_e53a83.png) ===== */
+/* ===== СТОРІНКА ДЕТАЛЕЙ ТА КУПІВЛЯ ===== */
 .details-main {
     max-width: 800px;
     margin: 40px auto;
@@ -291,7 +291,7 @@ section {
     color: #333;
 }
 
-/* ===== 6. ОСОБИСТИЙ КАБІНЕТ (image_e541a6.png) ===== */
+/* ===== ОСОБИСТИЙ КАБІНЕТ ===== */
 .profile-main {
     max-width: 900px;
     margin: 40px auto;
@@ -355,7 +355,7 @@ section {
 
 .cancel-btn:hover {
     background-color: #e63946;
-    color: white; /* ВИПРАВЛЕНО: Було #white */
+    color: white; 
 }
 
 .empty-msg {
@@ -366,7 +366,7 @@ section {
     border-radius: 10px;
 }
 
-/* ===== 7. ПРО НАС ТА ФУТЕР ===== */
+/* ===== ПРО НАС ТА ФУТЕР ===== */
 .about-content {
     background: white;
     padding: 30px;
@@ -386,8 +386,6 @@ footer {
     padding: 40px 20px;
     margin-top: 40px;
 }
-
-/* ===== 8. АДАПТИВНІСТЬ (media) ===== */
 
 /* Планшети */
 @media (max-width: 768px) {
